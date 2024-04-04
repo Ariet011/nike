@@ -93,3 +93,112 @@
 .box_objekt_img__img {
 	width: 100%;
 }
+
+/* my */
+.my{
+}
+.classic__text{
+font-size: 25px;
+}
+.images{
+width: 100%;
+height: 100%;
+display: flex;
+overflow-x: scroll;
+scroll-snap-type: x mandatory;
+transition: transform 0.3s ease;
+}
+.photos{
+	min-width: 32%;
+	margin: 8px;
+	position: relative;
+}
+.text__movie{
+	color: black;
+	font-size: 3rem;
+	position: absolute;
+	top: 30%;
+	left: 10%;
+	font-family: "Luckiest Guy", cursive;
+	font-weight: 400;
+	font-style: normal;
+  }
+.box__pictures{
+	width: 100%;
+	height: 100%;
+	scroll-snap-align: start;
+}
+.arrow1{
+position: absolute;
+bottom: 43%;
+left: 1%;
+width: 5%;
+height: 3%;
+z-index: 1;
+background-color: #fff;
+border-radius: 50%;
+font-size: 30px;
+}
+.arrow2{
+	position: absolute;
+	bottom: 43%;
+	right: 1%;
+	width: 5%;
+height: 3%;
+	z-index: 1;
+	background-color: #fff;
+	border-radius: 50%;
+	font-size: 30px;
+	}
+
+	@media screen and (max-width: 960px) {
+		.photos {
+			min-width: 40%; 
+			margin: 8px 0; 
+		}
+	
+		.arrow1,
+		.arrow2 {
+			width: 10%; 
+			height: 5%;
+			font-size: 20px; 
+		}
+	}
+	@media screen and (max-width: 550px) {
+		.photos{
+			min-width: 90%;
+		}
+	}
+	.second__text{
+		font-size: 25px;
+		display: flex;
+		justify-content: space-between;
+	}
+	.classic__btn{
+		font-size: 25px;
+	width: 50px;
+	height: 50px;
+	border-radius: 50%;
+	}
+	.second__images{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			overflow-x: scroll;
+			scroll-snap-type: x mandatory;
+			transition: transform 0.3s ease;
+	}
+	.second__photos{
+		min-width: 40%;
+		margin: 8px;
+		position: relative;
+	}
+.second__photos__img{
+	width: 100%;
+}
+@media screen and (max-width: 768px) {
+    .second__photos {
+        min-width: 100%; 
+        margin: 8px 0; 
+    }
+}

@@ -5,6 +5,9 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Document</title>
 		<link rel="stylesheet" href="./css/Main.css" />
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap" rel="stylesheet">
 	</head>
 	<body>
 		<div class="conteiner-for-main">
@@ -31,6 +34,101 @@
 					</div>
 				</div>
 			</div>
+			<br>
+			<br>
+			<div class="my">
+				<div class="classic__text">Classics Spotight</div>
+				<div class="images">
+					<button class="arrow1" onclick="scrollImages(-1)"><</button>
+					
+					<div class="photos">
+						<img class="box__pictures" src="./images/jordan 2.png" alt="">
+						<h2 class="text__movie">air jordan 1</h2>
+					</div>
+					<div class="photos">
+						<img class="box__pictures" src="./images/air max.jpeg" alt="">
+						<h2 class="text__movie">air max</h2>
+					</div>
+					<div class="photos">
+						<img class="box__pictures" src="./images/dunk.png" alt="">
+						<h2 class="text__movie">nike dunk</h2>
+					</div>
+					<div class="photos">
+						<img class="box__pictures" src="./images/force.png" alt="">
+						<h2 class="text__movie">air Force</h2>
+					</div>
+					<div class="photos">
+						<img class="box__pictures" src="./images/90g.png" alt="">
+						<h2 class="text__movie">air max 90 G</h2>
+					</div>
+					<div class="photos">
+						<img class="box__pictures" src="./images/pulse.jpeg" alt="">
+						<h2 class="text__movie">air pulse</h2>	
+				</div>
+			</div><button class="arrow2" onclick="scrollImages(1)">></button>
+			</div>
+			<!-- sec -->
+			<br>
+			<br>
+			<div class="second__page">
+					<div class="second__text">
+					<div class="classic__text">Shop by Sport</div>
+					<div class="btn">
+					<button class="classic__btn"><</button>
+					<button class="classic__btn">></button>
+					</div>
+					
+				</div>
+				<div class="second__images">
+
+				
+				<div class="second__photos">
+					<img class="second__photos__img" src="./images/basketball.jpg" alt="">
+					<h2>Basketbal</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/running.jpg" alt="">
+						<h2>Running</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/training.jpg" alt="">
+						<h2>Training</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/soccer.jpg" alt="">
+						<h2>Soccer</h2>
+						</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/golf.jpg" alt="">
+						<h2>Golf</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/tennis4.jpg" alt="">
+						<h2>Tennis</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/football.jpg" alt="">
+						<h2>Football</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/basebal.jpg" alt="">
+						<h2>Basebal</h2>
+					</div>
+					<div class="second__photos">
+						<img class="second__photos__img" src="./images/yoga.jpg" alt="">
+						<h2>Yoga</h2>
+					</div>
+				</div>
+				</div>
 		</div>
+		<script>
+			  const images = document.querySelector('.images');
+    let currentIndex = 0;
+    const scrollImages = (direction) => {
+        const step = direction === 1 ? -200 : 200;
+        currentIndex = Math.max(0, Math.min(currentIndex + step, images.scrollWidth - images.clientWidth));
+        images.style.transform = `translateX(${currentIndex}px)`;
+    };
+		</script>
 	</body>
 </html>
